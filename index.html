@@ -1,50 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shivam Ekale | DevOps</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-    .card {
-      background: rgba(255,255,255,0.08);
-      padding: 40px;
-      border-radius: 20px;
-      backdrop-filter: blur(10px);
-      max-width: 500px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    }
-    h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    p { color: #cbd5f5; }
-    .btn {
-      margin-top: 20px;
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 10px;
-      text-decoration: none;
-      color: white;
-      border: 1px solid white;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shivam Ekale - DevOps and AWS Cloud Engineer portfolio website." />
+  <title>ShivamEkale.in</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="card">
-    <h1>Shivam Ekale</h1>
-    <p>Cloud | DevOps Engineer</p>
-    <h2>🚧 Website Under Construction</h2>
-    <p>Building cloud infrastructure, automations, and real-world DevOps projects.</p>
-    <a href="#" class="btn">GitHub</a>
-    <a href="#" class="btn">LinkedIn</a>
-  </div>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html#home" class="brand">ShivamEkale<span>.in</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact Me</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme"><span>🌙</span></button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">AWS Certified • DevOps Engineer • Cloud Infrastructure</p>
+        <h1>Hi, I’m <span>Shivam</span></h1>
+        <h2>DevOps Engineer</h2>
+        <p class="hero-summary">
+          DevOps Engineer focused on AWS cloud services, scalable and highly available architectures,
+          secure VPC networking, CI/CD pipelines, monitoring, observability, and automation-driven deployments.
+        </p>
+
+        <div class="hero-details" aria-label="Quick contact details">
+          <a class="detail-card" href="mailto:shivamekale07@gmail.com">
+            <span class="detail-label">Email</span>
+            <span class="detail-value">shivamekale07@gmail.com</span>
+          </a>
+          <a class="detail-card" href="tel:+919011886579">
+            <span class="detail-label">Phone</span>
+            <span class="detail-value">+91 90118 86579</span>
+          </a>
+          <span class="detail-card">
+            <span class="detail-label">Location</span>
+            <span class="detail-value">Maharashtra, India</span>
+          </span>
+          <span class="detail-card status-card">
+            <span class="detail-label">Current Status</span>
+            <span class="detail-value"><span class="status-dot"></span>Open to Work</span>
+          </span>
+        </div>
+
+        <div class="hero-cta-row" aria-label="Resume and social profile links">
+          <div class="social-links hero-socials" aria-label="Social profile links">
+            <a class="social-icon linkedin" href="https://www.linkedin.com/in/shiivam22" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.942v5.664H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.602 0 4.267 2.371 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.554V9h3.565v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a class="social-icon github" href="https://github.com/Its-Shiivam22" target="_blank" rel="noopener" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56v-2.16c-3.2.7-3.87-1.38-3.87-1.38-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18A10.9 10.9 0 0 1 12 6.05c.98 0 1.96.13 2.88.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12v3.2c0 .31.21.67.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+            </a>
+          </div>
+          <a class="btn primary resume-btn" href="assets/RESUME.pdf" download>Download Resume</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-card">
+          <img src="assets/profile-portrait.jpg" alt="Shivam professional profile photo" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading">
+        <p>About</p>
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text card">
+          <p class="eyebrow">Professional Summary</p>
+          <h3>Building reliable, scalable, and production-ready cloud systems</h3>
+          <p>
+            DevOps Engineer with experience in AWS cloud services, designing and deploying scalable,
+            highly available architectures using load balancing, auto scaling, and secure VPC networking.
+          </p>
+          <p>
+            Skilled in building CI/CD pipelines, implementing monitoring and observability, and enforcing
+            least privilege access for secure systems. Focused on automating deployments and delivering
+            reliable, production-ready cloud systems.
+          </p>
+          <div class="about-highlight-grid" aria-label="Professional focus areas">
+            <span>Scalable AWS Architecture</span>
+            <span>CI/CD Automation</span>
+            <span>Secure VPC Networking</span>
+            <span>Monitoring & Observability</span>
+          </div>
+        </div>
+
+        <aside class="cert-card" aria-label="AWS certification">
+          <img src="assets/aws-certified-solutions-architect-associate.png" alt="AWS Certified Solutions Architect Associate badge" />
+          <div>
+            <h3>AWS Certified Solutions Architect – Associate</h3>
+            <p>Issued 24 March 2026 • Verified on Credly</p>
+          </div>
+          <a class="btn cert-btn" href="https://www.credly.com/badges/9bf512e8-f7bb-4f2e-af60-298a7f478cae/public_url" target="_blank" rel="noopener">View AWS Certification</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading">
+        <p>Technical Toolkit</p>
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills-grid resume-skills">
+        <article class="skill-card"><span>☁️</span><h3>Cloud Platforms</h3><p>AWS: EC2, VPC, S3, IAM, Auto Scaling, Load Balancer, RDS, Aurora</p></article>
+        <article class="skill-card"><span>🔁</span><h3>CI/CD</h3><p>Jenkins and GitHub Actions for automated delivery workflows</p></article>
+        <article class="skill-card"><span>🐳</span><h3>Containers & Orchestration</h3><p>Docker and Kubernetes for containerized deployments</p></article>
+        <article class="skill-card"><span>🏗️</span><h3>Infrastructure as Code</h3><p>Terraform and AWS CloudFormation for repeatable infrastructure provisioning</p></article>
+        <article class="skill-card"><span>📊</span><h3>Observability & Monitoring</h3><p>Prometheus and Grafana for visibility, metrics, and monitoring</p></article>
+        <article class="skill-card"><span>🐧</span><h3>Linux, Scripting & Networking</h3><p>Amazon Linux, Ubuntu, Bash, Python, Git, GitHub, Route 53, Security Groups, NAT Gateway, Internet Gateway, Route Tables, Subnets, and VPC</p></article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading">
+        <p>Featured Work</p>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <article class="project-showcase card">
+        <div class="project-slider" data-slider>
+          <img src="assets/projects/serverless-architecture.svg" alt="AWS three-tier scalable architecture diagram" class="active" />
+          <img src="assets/projects/devops-flow.svg" alt="AWS networking and deployment workflow preview" />
+          <img src="assets/projects/serverless-ui.svg" alt="Cloud application preview" />
+        </div>
+        <div class="project-info">
+          <p class="project-date">AWS • Scalable Cloud Architecture</p>
+          <h3>AWS 3-Tier Scalable Web Architecture</h3>
+          <p>Architected and deployed a highly available three-tier architecture on AWS using multi-AZ deployment, load balancing, public and private subnets, application servers, managed MySQL database, Auto Scaling, and AWS Well-Architected Framework principles.</p>
+          <div class="project-tags"><span>EC2</span><span>VPC</span><span>Load Balancer</span><span>Auto Scaling</span><span>RDS</span></div>
+          <a class="btn primary" href="#" target="_blank" rel="noopener">Open GitHub Repo</a>
+        </div>
+      </article>
+
+      <article class="project-showcase card reverse">
+        <div class="project-slider" data-slider>
+          <img src="assets/projects/devops-flow.svg" alt="CI/CD and observability workflow preview" class="active" />
+          <img src="assets/projects/serverless-architecture.svg" alt="Cloud infrastructure preview" />
+          <img src="assets/projects/serverless-ui.svg" alt="Deployment dashboard preview" />
+        </div>
+        <div class="project-info">
+          <p class="project-date">CI/CD • Monitoring • Automation</p>
+          <h3>CI/CD Pipeline & Observability Workflow</h3>
+          <p>DevOps workflow focused on automated delivery using Jenkins and GitHub Actions, with monitoring and observability practices built around Prometheus and Grafana for reliable production-ready systems.</p>
+          <div class="project-tags"><span>Jenkins</span><span>GitHub Actions</span><span>Prometheus</span><span>Grafana</span></div>
+          <a class="btn primary" href="#" target="_blank" rel="noopener">Open GitHub Repo</a>
+        </div>
+      </article>
+
+      <article class="project-showcase card">
+        <div class="project-slider" data-slider>
+          <img src="assets/projects/serverless-ui.svg" alt="Infrastructure automation preview" class="active" />
+          <img src="assets/projects/devops-flow.svg" alt="Infrastructure as code workflow" />
+          <img src="assets/projects/serverless-architecture.svg" alt="AWS infrastructure preview" />
+        </div>
+        <div class="project-info">
+          <p class="project-date">Infrastructure as Code • Containers</p>
+          <h3>Infrastructure Automation & Container Deployment</h3>
+          <p>Infrastructure-focused project using Terraform, AWS CloudFormation, Docker, Kubernetes, Linux, Bash, and Python to automate repeatable provisioning and containerized deployment workflows.</p>
+          <div class="project-tags"><span>Terraform</span><span>CloudFormation</span><span>Docker</span><span>Kubernetes</span><span>Linux</span></div>
+          <a class="btn primary" href="#" target="_blank" rel="noopener">Open GitHub Repo</a>
+        </div>
+      </article>
+
+      <div class="view-all-wrap">
+        <a class="btn secondary" href="projects.html">View All Projects</a>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading">
+        <p>Contact</p>
+        <h2>Contact Me</h2>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-card contact-info-card">
+          <p class="eyebrow">Let’s Connect</p>
+          <h3>Contact Details</h3>
+
+          <div class="contact-detail-list">
+            <a class="contact-detail-item" href="mailto:shivamekale07@gmail.com"><span>Email</span><strong>shivamekale07@gmail.com</strong></a>
+            <a class="contact-detail-item" href="tel:+919011886579"><span>Mobile Number</span><strong>+91 90118 86579</strong></a>
+          </div>
+
+          <h3 class="connect-heading">Connect me on</h3>
+          <div class="social-links contact-socials" aria-label="Social links">
+            <a class="social-icon linkedin" href="https://www.linkedin.com/in/shiivam22" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.942v5.664H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.602 0 4.267 2.371 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.554V9h3.565v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="social-icon github" href="https://github.com/Its-Shiivam22" target="_blank" rel="noopener" aria-label="GitHub profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56v-2.16c-3.2.7-3.87-1.38-3.87-1.38-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18A10.9 10.9 0 0 1 12 6.05c.98 0 1.96.13 2.88.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12v3.2c0 .31.21.67.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></a>
+          </div>
+        </div>
+
+        <form class="contact-form card" id="contactForm">
+          <div class="form-row">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Opportunity / Collaboration / Query" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 ShivamEkale.in. All Rights Reserved.</footer>
+  <script src="script.js"></script>
 </body>
 </html>
