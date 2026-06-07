@@ -30,9 +30,9 @@
   <main>
     <section class="hero" id="home">
       <div class="hero-content">
-        <p class="eyebrow">AWS Certified • DevOps • Cloud Infrastructure</p>
+        <p class="eyebrow">AWS Certified • DevOps Engineer • Cloud Infrastructure</p>
         <h1>Hi, I’m <span>Shivam</span></h1>
-        <h2>DevOps & Cloud Engineer</h2>
+        <h2>DevOps Engineer</h2>
         <p class="hero-summary">
           DevOps Engineer focused on AWS cloud services, scalable and highly available architectures,
           secure VPC networking, CI/CD pipelines, monitoring, observability, and automation-driven deployments.
@@ -210,7 +210,13 @@
           </div>
         </div>
 
-        <form class="contact-form card" id="contactForm">
+        <form class="contact-form card" id="contactForm" action="https://formsubmit.co/shivamekale07@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Portfolio Contact Form Message" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://shivamekale.in/thank-you.html" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
           <div class="form-row">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required />
@@ -228,7 +234,7 @@
             <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
           </div>
           <button class="btn primary" type="submit">Send Message</button>
-          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite">Messages are delivered securely through FormSubmit.</p>
         </form>
       </div>
     </section>

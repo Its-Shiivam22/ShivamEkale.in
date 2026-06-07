@@ -1008,3 +1008,66 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* Thank You Page */
+.thank-you-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  min-height: calc(100vh - 66px);
+  padding: 142px 24px 80px;
+  display: grid;
+  place-items: center;
+}
+
+.thank-you-card {
+  width: min(760px, 100%);
+  padding: 46px;
+  text-align: center;
+}
+
+.thank-you-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--blue);
+  border: 1px solid var(--line);
+  font-size: 38px;
+  font-weight: 950;
+}
+
+.thank-you-card h1 {
+  color: var(--dark);
+  font-size: clamp(34px, 5vw, 54px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  margin: 10px 0 14px;
+}
+
+.thank-you-card p:not(.eyebrow) {
+  color: var(--muted);
+  max-width: 580px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.thank-you-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+@media (max-width: 520px) {
+  .thank-you-card {
+    padding: 30px 22px;
+  }
+
+  .thank-you-actions .btn {
+    width: 100%;
+  }
+}
