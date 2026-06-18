@@ -1071,3 +1071,150 @@ footer {
     width: 100%;
   }
 }
+
+/* Final fix: Skills section with button-style skill chips inside parent skill cards */
+.compact-skill-grid {
+  align-items: stretch;
+}
+.skill-box {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.skill-box .skill-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  background: var(--soft);
+  border-radius: 16px;
+  font-size: 25px;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 2;
+}
+.skill-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 14px;
+  position: relative;
+  z-index: 2;
+}
+.skill-chip-list .skill-chip {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: auto !important;
+  height: auto !important;
+  min-height: 34px;
+  padding: 7px 12px;
+  margin: 0 !important;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--soft);
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.1;
+  box-shadow: none;
+  white-space: nowrap;
+}
+[data-theme="dark"] .skill-chip-list .skill-chip {
+  background: rgba(56, 189, 248, 0.10);
+  border-color: rgba(125, 211, 252, 0.22);
+  color: #7dd3fc;
+}
+
+/* Final fix: keep project architecture images fully inside their frames */
+.project-slider {
+  display: grid;
+  place-items: center;
+  background: var(--surface);
+}
+.project-slider img {
+  object-fit: contain !important;
+  padding: 14px;
+  background: var(--surface);
+}
+.project-catalog-card img {
+  object-fit: contain !important;
+  padding: 16px;
+  background: var(--surface);
+}
+[data-theme="dark"] .project-slider,
+[data-theme="dark"] .project-slider img,
+[data-theme="dark"] .project-catalog-card img {
+  background: #0f172a;
+}
+@media (max-width: 760px) {
+  .skill-box {
+    min-height: auto;
+  }
+  .skill-chip-list {
+    justify-content: center;
+  }
+  .project-slider img,
+  .project-catalog-card img {
+    padding: 10px;
+  }
+}
+
+
+/* Clean project descriptions */
+.project-summary {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.project-detail-list {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 18px 0 20px;
+  padding: 0;
+}
+
+.project-detail-list li {
+  position: relative;
+  padding: 12px 14px 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: linear-gradient(180deg, var(--surface), var(--card));
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.project-detail-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  bottom: 14px;
+  width: 4px;
+  border-radius: 999px;
+  background: var(--blue);
+}
+
+.project-detail-list strong {
+  color: var(--dark);
+  font-weight: 900;
+}
+
+.project-info > p:not(.project-date) {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.project-catalog-body > .hero-cta-row {
+  margin-top: 8px;
+}
+
+@media (max-width: 760px) {
+  .project-detail-list li {
+    padding: 11px 12px 11px 16px;
+  }
+}
